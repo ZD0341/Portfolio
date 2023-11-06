@@ -1,114 +1,243 @@
-body {
-  font: 15px/1.5 Arial, Helvetica, sans-serif;
-  padding:0;
-  margin:0;
-  background-color:azure
-}
-/*  */
-.container{ display: flex;
-  width: 75%;
-  /* margin:auto; */
-  
-  justify-content: flex-end;
-}
-
-.container1{
-  display: flex;
-  /* width: 75%; */
-  /* margin:auto; */
-
-  justify-content: center;
-}
-/*  */
-header{
-  background-color:#5b696e;
-  padding-top: 25px;
-  min-height: 70px;
-  border-bottom: gold 3px solid;
-  align-items: center;
-}
-
-header a{
-  color:aliceblue;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-header ul{
-  margin:0;
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
   padding: 0;
 }
 
-header li{
-  display:inline;
-  padding: 0 0 15px 15px;
-  float: left;
+a:hover {
+  background-color: #1982af;
 }
 
-/* pushing the nav down */
-header nav{
-  float: right;
-  margin-top: 5px;
+/* Set a background color for the entire page */
+body {
+  background-color: #f5f5f5;
+  /* Change to your preferred background color */
+  font-family: Arial, sans-serif;
+  /* Change the font family */
+  color: #333;
+  /* Change the default text color */
 }
 
-header #name h1{
-  margin:0;
+/* Header Styles */
+header {
+  background-color: #0074d9;
+  /* Change to your preferred header background color */
+  color: #fff;
+  /* Header text color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 2px;
 }
 
-header a:hover{
-  color: #cccccc;
+.header-left h1 {
+  font-size: 36px;
+  /* Change the font size */
+}
+
+.header-right nav ul {
+  list-style: none;
+}
+
+.header-right nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.header-right nav ul li a {
+  color: #0b0101;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  /* Smooth color transition */
+}
+
+.header-right nav ul li a:hover {
+  color: #ff4136;
+  /* Change the hover color */
+}
+
+/* About Me Section */
+#about {
+  background-color: #fff;
+  /* Background color for the section */
+  padding: 30px;
+  border: #333 solid;
+  margin: 5px;
+  font-style: oblique
+}
+
+#about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Work Section Styles */
+#work {
+  background-color: #acbedd;
+  /* Background color for the section */
+  padding: 132px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid rgb(36, 31, 7);
+}
+
+#work h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Work Item Styles */
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Adjust the number of columns as needed */
+  gap: 75px;
+  /* Gap between grid items */
+}
+
+.work-item {
+  background-color: #fff;
+  /* Background color for each box */
+  padding: 20px;
+  border: 1px solid #ddd;
+  /* Border for each box */
+}
+
+.work-img {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  background-color: #fff;
+  /* Background color for each box */
+  padding: 20px;
+  border: 1px solid #ddd;
+  /* Border for each box */
+  position: relative;
+  text-align: center;
+
+}
+
+.corgi3 {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  background-color: #fff;
+  /* Background color for each box */
+  padding: 20px;
+  border: 1px solid #ddd;
+  /* Border for each box */
+  position: relative;
+  text-align: center;
+}
+
+.corgi4 {
+  height: auto;
+  width: auto;
+  max-width: 800px;
+  max-height: 300px;
+  background-color: #fff;
+  /* Background color for each box */
+  padding: 3px;
+  border: 1px solid #dddddd;
+  /* Border for each box */
+  position: relative;
+  text-align: center;
+}
+
+
+.corgi {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  background-color: #fff;
+  /* Background color for each box */
+  padding: 20px;
+  border: 1px solid #ddd;
+  /* Border for each box */
+  position: relative;
+  text-align: center;
+}
+
+.weather-img {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  background-color: #fff;
+  /* Background color for each box */
+  padding: 20px;
+  border: 1px solid #ddd;
+  /* Border for each box */
+  position: relative;
+  text-align: center;
+}
+
+a:link { text-decoration: none; color:black; }
+
+a:visited { text-decoration:none; color:black; }
+
+a:hover, a:active { text-decoration: none;color:black; background-color: none; }
+
+.weather-text {
+  color: #0b0101;
+  background-color: rgba(146, 200, 232, 0.852);
+  position: relative;
+  width: 210px;
+  bottom: 75px;
+  left: 20px;
+  padding: 10px;
   font-weight: bold;
 }
 
-.about-me-text {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row-reverse;
-justify-content: center;
-padding: 20px;
 
+.weather-text:hover{
+  background-color: rgb(146, 200, 232);
+  width: 250px;
+  transition: width .3s;
+  font-size: larger;
 }
 
-/* showcase */
-
-#showcase{min-height: 150px;
-background-color: #a1bc08;
-text-align: right;
-color: #050505;
-margin-top: 25px;
-font-size: 24px;
-border-radius: rgb(5, 5, 5) 10px solid;
+.work-big {
+  grid-column: span 2;
+  /* Make the bigger box span two columns */
 }
 
-
-#boxes {margin-top: 20px;}
-
-img {
-  width: 200px;
-  height: 200px;
-  /* Margin property */
-  margin: 20px;
-  /* Padding property */
-  padding: 20px;
-  /* Border property */
-  border: 9px solid rgb(202, 223, 43);
-  column-count: 2;
-  gap: 1rem;
-
+/* Footer Styles */
+footer {
+  background-color: #0074d9;
+  /* Footer background color */
+  padding: 20px 0;
+  color: #fff;
 }
 
-footer li{
-  display:inline;
-  padding: 0 15px 40px 15px;
+.contact-nav ul {
+  list-style: none;
+  text-align: center;
 }
 
-footer{border: #a1bc08 3px solid;}
+.contact-nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
 
+.contact-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 
-@media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
-  }
+.contact-nav ul li a:hover {
+  color: #ff4136;
+  /* Change the hover color */
+}
